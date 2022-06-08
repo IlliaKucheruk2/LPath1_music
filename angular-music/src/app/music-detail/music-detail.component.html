@@ -1,0 +1,12 @@
+<div *ngIf="music">
+
+    <h2>{{music.name | uppercase}} Details</h2>
+    <div><span>id: </span>{{music.id}}</div>
+    <div>
+      <label for="music-name">Music name: </label>
+      <input id="music-name" [(ngModel)]="music.name" placeholder="Music name">
+    </div>
+    <button type="button" (click)="goBack()">go back</button>
+    <button type="button" (click)="save()">save</button>
+  
+  </div>
